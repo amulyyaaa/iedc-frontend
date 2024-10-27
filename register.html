@@ -1,0 +1,111 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEDC E-Summit Registration</title>
+    <style>
+        /* Reset default margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set full page background to black */
+        body {
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        /* Registration form container */
+        .registration-form {
+            width: 400px;
+            padding: 30px;
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .registration-form h1 {
+            font-size: 2em;
+            color: #ff9900;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .form-group label {
+            font-size: 1em;
+            color: #ccc;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            outline: none;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            font-weight: bold;
+            color: #1a1a1a;
+            background-color: #ff9900;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-button:hover {
+            background-color: #ffcc66;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="registration-form">
+        <h1>Register for E-Summit</h1>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="college">College</label>
+                <input type="text" id="college" name="college" required>
+            </div>
+            <button type="submit" class="submit-button">Submit Registration</button>
+        </form>
+    </div>
+
+</body>
+</html>
